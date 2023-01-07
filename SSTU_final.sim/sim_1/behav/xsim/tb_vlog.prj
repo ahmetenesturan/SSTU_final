@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SSTU_final.srcs/sources_1/new/ALU.v" \
+"../../../../SSTU_final.srcs/sources_1/new/ALU_lib.v" \
+"../../../../SSTU_final.srcs/sources_1/new/CU.v" \
+"../../../../SSTU_final.srcs/sources_1/new/RB.v" \
+"../../../../SSTU_final.srcs/sources_1/new/RB_lib.v" \
+"../../../../SSTU_final.srcs/sources_1/new/TOP.v" \
+"../../../../SSTU_final.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

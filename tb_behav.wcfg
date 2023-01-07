@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
+      <Cursor1Time time="115.036 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="278"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject type="logic" fp_name="/tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/Start">
+      <obj_property name="ElementShortName">Start</obj_property>
+      <obj_property name="ObjectShortName">Start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/InA">
+      <obj_property name="ElementShortName">InA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">InA[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/InB">
+      <obj_property name="ElementShortName">InB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">InB[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/Out">
+      <obj_property name="ElementShortName">Out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/Busy">
+      <obj_property name="ElementShortName">Busy</obj_property>
+      <obj_property name="ObjectShortName">Busy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/a/WE">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/a/Busy">
+      <obj_property name="ElementShortName">Busy</obj_property>
+      <obj_property name="ObjectShortName">Busy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/a/InsSel">
+      <obj_property name="ElementShortName">InsSel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">InsSel[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/a/InMuxAdd">
+      <obj_property name="ElementShortName">InMuxAdd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">InMuxAdd[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/a/OutMuxAdd">
+      <obj_property name="ElementShortName">OutMuxAdd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OutMuxAdd[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/a/RegAdd">
+      <obj_property name="ElementShortName">RegAdd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RegAdd[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/a/CUconst">
+      <obj_property name="ElementShortName">CUconst[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CUconst[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/a/s">
+      <obj_property name="ElementShortName">s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/ALUinA">
+      <obj_property name="ElementShortName">ALUinA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUinA[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/ALUinB">
+      <obj_property name="ElementShortName">ALUinB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUinB[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/ALUout">
+      <obj_property name="ElementShortName">ALUout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUout[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

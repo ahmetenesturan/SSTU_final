@@ -1,17 +1,12 @@
 `timescale 1ns / 1ps
 
-module subs(
-
-    );
-endmodule
-
 module mux4(
-	input [3:0]I0,
-	input [3:0]I1,
-	input [3:0]I2,
-	input [3:0]I3,
+	input [7:0]I0,
+	input [7:0]I1,
+	input [7:0]I2,
+	input [7:0]I3,
 	input [1:0]S,
-	output reg [3:0]O
+	output reg [7:0]O
     );
 
 (* dont_touch *)
@@ -77,4 +72,47 @@ module xor8(
     );
 (* dont_touch *)
 assign r = a ^ b;
+endmodule
+
+module FA(
+input x,y,c_in,
+output c_out,sum);
+
+(*DONT_TOUCH = "TRUE"*) wire sum0,c_out0,c_out1;
+HA HA0(x,y,c_out0,sum0);
+
+HA HA1(sum0,c_in,c_out1,sum);
+OR OR0(c_out1,c_out0,c_out);
+
+endmodule
+
+module AND(
+input I1,I2,
+output O);
+
+assign O = I1 & I2;
+endmodule
+
+
+module OR( 
+input I1, I2,
+output O);
+
+assign O = I1 | I2;
+endmodule
+
+
+module HA( //halfadder 
+input x,y,
+output c_out,sum);
+
+EXOR EXOR0(x,y,sum);
+AND AND0(x,y,c_out);
+endmodule
+
+module EXOR(
+input I1,I2,
+output O);
+LUT2# (.INIT(4'b0110))lut(.O(O),.I0(I1),.I1(I2)); 
+
 endmodule

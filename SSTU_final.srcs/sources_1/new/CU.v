@@ -121,22 +121,82 @@ module CU(
             13: begin //begin to division 3, reg7 is the division counter reg
                 InMuxAdd <= 4; //reg read mode
                 OutMuxAdd <= 6; //read reg6
-                RegAdd <= 1; //write reg0, aluin_a
+                RegAdd <= 1; //write reg1, aluin_a
                 WE <= 1;
-                s < 14;
+                InsSel <= 3;
+                s <= 14;
             end
             14: begin //set div const
                 CUconst <= 8'b1111_1101; //-3 for substraction
                 InMuxAdd <= 2; //const mode
                 RegAdd <= 2; //write reg2, aluinB
                 WE <= 1;
-                s < 15;                
+                InsSel <= 3;
+                s <= 15;                
             end
-            15: begin //division
-                if()
+            15: begin //left bit shift, to check if the result is negative, 15 16 are used in this part
+                if(CO) begin //result is negative, should use prev result, read div counter reg: reg7
+                    InMuxAdd <= 4;
+                    OutMuxAdd <= 7;
+                    RegAdd <= 1;
+                    WE <= 1;
+                    s <= 20;
+                    
+                end
+                else begin //make the sub
+                    InsSel <= 2; //add mode 
+                    InMuxAdd <= 3; //read alu out
+                    RegAdd <= 8; //write to reg8
+                    WE <= 1;
+                    s <= 16;
+                end
             end
-            16: begin
-                
+            16: begin //increment the div counter, read div counter reg7
+                InMuxAdd <= 4;
+                OutMuxAdd <= 7;
+                RegAdd <= 1; //write to aluinA
+                WE <= 1;
+                s <= 17;
+            end
+            17: begin //read counter, read +1
+                CUconst <= 1;
+                InMuxAdd <= 2;
+                RegAdd <= 2; //write to aluinB
+                WE <= 1;
+                InsSel <= 2; //add mode
+                s <= 18;
+            end
+            18: begin //write res to counter
+                InMuxAdd <= 3; //read alu
+                WE <= 1;
+                RegAdd <= 7; //write to reg7
+                s <= 19;
+            end
+            19: begin //read the dividend, which is in reg 8
+                OutMuxAdd <= 8;
+                InMuxAdd <= 4; //read reg
+                WE <= 1;
+                RegAdd <= 1; //write to aluinA
+                s <= 14; //set -3 const and do the division again
+            end
+            20: begin //finish state
+                CUconst <= 8'b1111_1111; //-1 for substraction
+                InMuxAdd <= 2; //const mode
+                RegAdd <= 2; //write reg0, aluinA
+                WE <= 1;
+                InsSel <= 2;
+                s <= 21;
+            end
+            21: begin
+                InMuxAdd <= 3; //read alu
+                RegAdd <= 0; //output
+                WE <= 1;
+                s <= 22;
+            end
+            22: begin
+                WE <= 0; //disable write
+                Busy <= 0;
+                //s <= 0; //go to initial state
             end
             endcase
         end
@@ -144,5 +204,3 @@ module CU(
     end
 
 endmodule
-
-//aludaki shifte carry ekle, carrye bakarak negatif mi kontrol et

@@ -18,10 +18,10 @@ module tb();
 		#30;
         reset = 0;
 		Start = 1;
-		InA = 8'd10; 
-		InB = 8'd11;	
-		#100		
-		Start = 0;
+		InA = 8'd8; 
+		InB = 8'd6;	
+		#1000;		
+		//Start = 0;
 		#1000;		
 	end	     
 endmodule

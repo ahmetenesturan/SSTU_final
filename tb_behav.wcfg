@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
-      <Cursor1Time time="115.036 ns"></Cursor1Time>
+      <ZoomStartTime time="718.410 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,718.411 ns"></ZoomEndTime>
+      <Cursor1Time time="1,161.280 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="278"></NameColumnWidth>
-      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="18" />
    <wvobject type="logic" fp_name="/tb/clk">
@@ -55,10 +55,6 @@
       <obj_property name="ElementShortName">WE</obj_property>
       <obj_property name="ObjectShortName">WE</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb/uut/a/Busy">
-      <obj_property name="ElementShortName">Busy</obj_property>
-      <obj_property name="ObjectShortName">Busy</obj_property>
-   </wvobject>
    <wvobject type="array" fp_name="/tb/uut/a/InsSel">
       <obj_property name="ElementShortName">InsSel[1:0]</obj_property>
       <obj_property name="ObjectShortName">InsSel[1:0]</obj_property>
@@ -82,26 +78,30 @@
    <wvobject type="array" fp_name="/tb/uut/a/CUconst">
       <obj_property name="ElementShortName">CUconst[7:0]</obj_property>
       <obj_property name="ObjectShortName">CUconst[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb/uut/a/s">
-      <obj_property name="ElementShortName">s[3:0]</obj_property>
-      <obj_property name="ObjectShortName">s[3:0]</obj_property>
+      <obj_property name="ElementShortName">s[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb/uut/ALUinA">
       <obj_property name="ElementShortName">ALUinA[7:0]</obj_property>
       <obj_property name="ObjectShortName">ALUinA[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb/uut/ALUinB">
       <obj_property name="ElementShortName">ALUinB[7:0]</obj_property>
       <obj_property name="ObjectShortName">ALUinB[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb/uut/ALUout">
       <obj_property name="ElementShortName">ALUout[7:0]</obj_property>
       <obj_property name="ObjectShortName">ALUout[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/CO">
+      <obj_property name="ElementShortName">CO</obj_property>
+      <obj_property name="ObjectShortName">CO</obj_property>
    </wvobject>
 </wave_config>

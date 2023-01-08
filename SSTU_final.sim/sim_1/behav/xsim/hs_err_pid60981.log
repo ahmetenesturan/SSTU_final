@@ -1,0 +1,25 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbefecb) [0x7f9ed5befecb]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(JVM_handle_linux_signal+0xd1) [0x7f9ed5bf6c81]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbead23) [0x7f9ed5bead23]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7f9f16042520]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(+0x286565) [0x7f9ee5e86565]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataObjMgr::createDrawingBTree(std::vector<SimBridge::IDataObj const*, std::allocator<SimBridge::IDataObj const*> > const&, ISIM::IGuiStatus*, bool)+0x207) [0x7f9ee5e86b27]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataReader::getTransitions(SimBridge::IDataObj const*, long long, long long, long long, SimBridge::ValueFormat const&, std::vector<SimBridge::Transition, std::allocator<SimBridge::Transition> >&) const+0x6f) [0x7f9ee5e91d7f]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SG_Model::ModelImp::getTransitions(SimBridge::IDataObj const*, SG_Model::IDatabase*, long long, long long, long long, SimBridge::ValueFormat const&, bool, std::vector<SimBridge::Transition, std::allocator<SimBridge::Transition> >&) const+0xbd) [0x7f9ee5f317ad]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SG_Model::Model::getTransitions(SG_Model::WVDataObject const*, long long, long long, long long, SimBridge::ValueFormat const&, bool, std::vector<SimBridge::Transition, std::allocator<SimBridge::Transition> >&) const+0x12c) [0x7f9ee5f32ecc]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(+0x3622fa) [0x7f9ee5f622fa]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SG_Model::WaveformRender::render(SG_Model::WVDataObject const&)+0x294) [0x7f9ee5f5e994]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformPanel::WaveformTraverser::drawWaveform(SG_Model::WVDataObject const*, int, int)+0x38e) [0x7f9ee5fd94ae]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformPanel::WaveformTraverser::handleItemSize(WaveViewer::WVTreeWVObjectModel::ITraverseHandler::TraverseItem const&)+0x52) [0x7f9ee5fd9782]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(SG_Model::WVDataObject const*, WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int, int&, int&) const+0x234) [0x7f9ee5fbcd24]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(SG_Model::WVDataObject const*, WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int, int&, int&) const+0x2be) [0x7f9ee5fbcdae]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int) const+0x57) [0x7f9ee5fbcee7]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformPanel::getGraphics(HDGDStringStream&, long&)+0x3a9) [0x7f9ee5fd8aa9]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WVExecutiveImp::getGraphicsDataSize()+0x9a) [0x7f9ee5f9513a]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WVExecutive::getGraphicsDataSize()+0xf) [0x7f9ee5f955af]
+/home/ahmetenesturan/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(Java_ui_views_waveform_waveformi_WVExecutive_1getGraphicsDataSize+0x17) [0x7f9ee5fe1317]
+[0x7f9ec5259384]
